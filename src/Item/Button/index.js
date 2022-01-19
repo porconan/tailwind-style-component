@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import tw, { styled, css, theme } from 'twin.macro'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {far} from '@fortawesome/free-regular-svg-icons'
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 
     const containerSolid = {
@@ -93,7 +93,7 @@ import {far} from '@fortawesome/free-regular-svg-icons'
                         props.isLoading ?
                         <FontAwesomeIcon
                             className="mr2 f-13px"
-                            icon={['far',"spinner-third"]}
+                            icon={faSpinner}
                             pulse
                         />
                     :
